@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>입력하신 텍스트는 다음과 같읍니다,,,,^^</h1>
+    <div style="width:500px; height: 200px;
+    border:tomato solid 2px;">
+    <h2>{{   text   }}</h2>
+    </div>
+    <h3>당신이 입력한 텍스트는 총 {{ wordcount2 }} 단어입니다,,,</h3>
+    <h3>단어를 카운트해보았읍니다</h3>
+    {% for x,y in wordcount%}
+        <h4>{{x}}: {{y}}</h4>
+        {% endfor %}
+    <a href="{% url 'home' %}">다시 해 보아요,,,^^</a>
+</body>
+</html>
